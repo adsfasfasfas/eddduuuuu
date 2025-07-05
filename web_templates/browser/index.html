@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EduGuide – Browser</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <header class="app-header">
+        <h1>📚 បញ្ជីសាកលវិទ្យាល័យទាំងអស់</h1>
+    </header>
+    <div class="catalog-container">
+        <!-- Sticky filter header -->
+        <div class="filter-header">
+            <div class="search-container">
+                <input type="search" id="search-input" placeholder="🔍 ស្វែងរកសាកលវិទ្យាល័យ..." autocomplete="off" />
+            </div>
+            <div class="filter-controls">
+                <!-- Location Filter -->
+                <div class="custom-select-wrapper">
+                    <div class="custom-select-trigger" data-filter="location">គ្រប់ទីតាំង</div>
+                    <div class="custom-options" data-filter="location"></div>
+                </div>
+                <!-- Budget Filter -->
+                <div class="custom-select-wrapper">
+                    <div class="custom-select-trigger" data-filter="budget">គ្រប់តម្លៃ</div>
+                    <div class="custom-options" data-filter="budget">
+                        <div class="custom-option selected" data-value="">គ្រប់តម្លៃ</div>
+                        <div class="custom-option" data-value="800">ក្រោម $800</div>
+                        <div class="custom-option" data-value="1500">$800 – $1500</div>
+                        <div class="custom-option" data-value="99999">លើសពី $1500</div>
+                    </div>
+                </div>
+                <!-- Major Category Filter -->
+                <div class="custom-select-wrapper">
+                    <div class="custom-select-trigger" data-filter="major">គ្រប់ជំនាញ</div>
+                    <div class="custom-options" data-filter="major"></div>
+                </div>
+            </div>
+            <div class="sort-wrapper">
+                <select id="sort-select">
+                    <option value="">តម្រៀបតាម...</option>
+                    <option value="tuition_asc">ថ្លៃសិក្សា ទាប→ខ្ពស់</option>
+                    <option value="tuition_desc">ថ្លៃសិក្សា ខ្ពស់→ទាប</option>
+                    <option value="ranking_desc">ពិន្ទុ Ranking</option>
+                    <option value="name_asc">ឈ្មោះ (ក–ហ)</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>
+                    <input type="checkbox" id="favorites-only"> បង្ហាញតែសាកលវិទ្យាល័យដែលចូលចិត្ត
+                </label>
+            </div>
+        </div>
+
+        <!-- LOADING -->
+        <div id="loading-state">
+            <div class="spinner"></div>
+            กำลังโหลด...</div>
+
+        <!-- NO RESULTS -->
+        <div id="no-results" class="hidden">មិនមានលទ្ធផលដែលត្រូវគ្នា!</div>
+
+        <!-- UNIVERSITY GRID -->
+            <div id="university-grid" class="hidden"></div>
+    </div>
+
+    <!-- App Script -->
+    <script src="script.js" defer></script>
+</body>
+</html>

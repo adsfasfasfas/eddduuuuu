@@ -1,0 +1,59 @@
+<!-- Smart Checklist Mini-App -->
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EduGuide – Checklist</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="/web_templates/vault/style.css?v=3" />
+    <link rel="stylesheet" href="style.css?v=3" />
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="vault-shell">
+        <header class="top-bar glass">
+            <h1>📋 បញ្ជីការងារ &amp; ឯកសារ</h1>
+            <button id="theme-toggle" class="icon-btn theme">🌙</button>
+        </header>
+
+        <section class="section">
+            <!-- Add new item -->
+            <div class="input-wrap glass">
+                <input type="text" id="new-item-input" placeholder="បញ្ចូលការងារថ្មី..." />
+                <div id="tag-trigger" class="tag-trigger">Tag ▾</div>
+                <div id="tag-options" class="tag-options hidden"></div>
+                <button id="add-btn" class="icon-btn primary">＋</button>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-container" style="align-items:center">
+                <canvas id="progress-ring" width="110" height="110"></canvas>
+                <span id="progress-text" style="margin-top:6px"></span>
+            </div>
+
+            <!-- Search filter -->
+            <div class="input-wrap glass" style="margin-top:6px">
+                <input type="text" id="search-input" placeholder="ស្វែងរក..." />
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="actions-row">
+                <button id="mark-all-btn" class="action-btn">✔️ Mark All</button>
+                <button id="clear-done-btn" class="action-btn">🗑️ Clear Done</button>
+                <button id="send-bot-btn" class="action-btn primary">📤 Send to Bot</button>
+            </div>
+
+            <!-- List -->
+            <div id="checklist-container"></div>
+        </section>
+    </div>
+
+    <script src="script.js?v=3" defer></script>
+</body>
+</html> 

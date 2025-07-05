@@ -1,0 +1,13 @@
+t=2025-07-05T11:18:54+0700 lvl=info msg="no configuration paths supplied"
+t=2025-07-05T11:18:54+0700 lvl=info msg="using configuration at default config path" path="/Users/admin/Library/Application Support/ngrok/ngrok.yml"
+t=2025-07-05T11:18:54+0700 lvl=info msg="open config file" path="/Users/admin/Library/Application Support/ngrok/ngrok.yml" err=nil
+t=2025-07-05T11:18:54+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2025-07-05T11:18:55+0700 lvl=info msg="client session established" obj=tunnels.session
+t=2025-07-05T11:18:55+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2025-07-05T11:18:55+0700 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:8000 url=https://fdf6-96-9-84-215.ngrok-free.app
+t=2025-07-05T11:19:58+0700 lvl=info msg="join connections" obj=join id=f5e881628a3d l=[::1]:8000 r=96.9.84.215:62667
+t=2025-07-05T11:19:58+0700 lvl=info msg="join connections" obj=join id=66edbfce8c8e l=[::1]:8000 r=96.9.84.215:62667
+t=2025-07-05T11:19:58+0700 lvl=info msg="join connections" obj=join id=f583ca918c59 l=[::1]:8000 r=96.9.84.215:62667
+t=2025-07-05T11:20:20+0700 lvl=info msg="join connections" obj=join id=ef7fb4e6539c l=[::1]:8000 r=96.9.84.215:62670
+t=2025-07-05T11:20:20+0700 lvl=info msg="join connections" obj=join id=a7406a64c54a l=[::1]:8000 r=96.9.84.215:62670
+t=2025-07-05T11:20:20+0700 lvl=info msg="join connections" obj=join id=a1065cac3195 l=[::1]:8000 r=96.9.84.215:62670

@@ -1,0 +1,65 @@
+{
+    "991705672": {
+        "favourites": [
+            2,
+            1
+        ],
+        "points": 22,
+        "badges": [
+            "analyst",
+            "Analyst"
+        ],
+        "builder_last": {
+            "faculty": "សិល្បៈ",
+            "majors": [
+                "សង្គមវិទ្យា",
+                "ការសម្តែងតន្ត្រី",
+                "តន្ត្រី",
+                "តូរ្យតន្ត្រី"
+            ],
+            "filters": {
+                "budget": 5000,
+                "cities": [
+                    "Battambang",
+                    "Phnom Penh"
+                ],
+                "type": "any"
+            },
+            "matches": [
+                {
+                    "id": 9,
+                    "score": 35
+                },
+                {
+                    "id": 13,
+                    "score": 35
+                },
+                {
+                    "id": 33,
+                    "score": 35
+                },
+                {
+                    "id": 43,
+                    "score": 35
+                }
+            ]
+        },
+        "last_recommendations": [
+            {
+                "major": "សិល្បៈនិងមនុស្សសាស្ត្រ (Arts & Humanities)",
+                "total_score": 12,
+                "reason": "Your preferences for \"អ្នកធ្វើការឯករាជ្យ\" and \"អង្គការមិនស្វែងរកប្រាក់ចំណេញ\" strongly suggest an interest in សិល្បៈនិងមនុស្សសាស្ត្រ (Arts & Humanities)."
+            },
+            {
+                "major": "បច្ចេកវិទ្យា (Technology)",
+                "total_score": 10,
+                "reason": "Your preferences for \"ការរីកចម្រើន\" and \"អ្នកធ្វើការឯករាជ្យ\" strongly suggest an interest in បច្ចេកវិទ្យា (Technology)."
+            },
+            {
+                "major": "វេជ្ជសាស្ត្រ (Health Sciences)",
+                "total_score": 9,
+                "reason": "Your preferences for \"វិទ្យាសាស្ត្រ\" and \"ច្រើនជាង ៣០\" strongly suggest an interest in វេជ្ជសាស្ត្រ (Health Sciences)."
+            }
+        ]
+    }
+}

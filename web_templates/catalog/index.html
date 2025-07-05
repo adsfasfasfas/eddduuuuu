@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EduGuide – Catalog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <header class="top-bar glass">
+        <input id="search" type="search" placeholder="ស្វែងរកសាកលវិទ្យាល័យ..." />
+        <select id="sort-select">
+            <option value="tuition_asc">ថ្លៃសិក្សា ⬆</option>
+            <option value="tuition_desc">ថ្លៃសិក្សា ⬇</option>
+        </select>
+    </header>
+    <!-- Dynamic filter chips will be injected here -->
+    <div class="chip-row" id="filter-chips"></div>
+    <main class="grid" id="catalog-grid"></main>
+    <template id="card-tpl">
+        <div class="card glass">
+            <div class="tag"></div>
+            <img class="logo" />
+            <h3 class="title"></h3>
+            <p class="cost"></p>
+            <button class="select-btn">✓ ជ្រើសរើស</button>
+        </div>
+    </template>
+    <script src="script.js" defer></script>
+
+    <template id="skeleton-tpl">
+        <div class="card glass skeleton"></div>
+    </template>
+</body>
+</html> 

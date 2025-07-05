@@ -1,0 +1,36 @@
+<!-- DNA Test 3.0 – Swipe-Card Quiz -->
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>EduGuide – DNA Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="quiz-shell">
+        <div class="top-bar">
+            <button id="back-btn" class="icon-btn" title="Back">❮</button>
+            <div id="progress-dots"></div>
+            <button id="restart-btn" class="icon-btn" title="Restart">⟲</button>
+        </div>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <main id="card-stack"></main>
+
+        <button id="next-btn" class="cta-btn" disabled>បន្ទាប់</button>
+    </div>
+
+    <section id="summary-panel" class="hidden">
+        <h2>សង្ខេបជម្រើសរបស់អ្នក</h2>
+        <div id="summary-list"></div>
+        <button id="submit-btn" class="cta-btn full">បញ្ជូនចម្លើយ</button>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html> 

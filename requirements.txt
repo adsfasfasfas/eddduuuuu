@@ -1,0 +1,8 @@
+python-telegram-bot[ext]
+python-dotenv
+pandas
+scikit-learn
+joblib
+firebase-admin
+tinydb
+pytest
